@@ -1,11 +1,11 @@
 {
   "name": "v-video",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
   "main": "dist/index.js",
   "scripts": {
-    "dev":"",
-    "build":"",
+    "dev": "",
+    "build": "",
     "pub": "nrm use npm &&npm publish &&nrm use taobao"
   },
   "repository": {
