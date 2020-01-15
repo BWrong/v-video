@@ -1,0 +1,27 @@
+{
+  "name": "v-video",
+  "version": "1.0.0",
+  "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev":"",
+    "build":"",
+    "pub": "nrm use npm &&npm publish &&nrm use taobao"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BWrong/v-video.git"
+  },
+  "keywords": [
+    "videojs",
+    "vue",
+    "directive"
+  ],
+  "author": "bwrong<ibwrong@foxmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BWrong/v-video/issues",
+    "email": "ibwrong@foxmail.com"
+  },
+  "homepage": "https://github.com/BWrong/v-video#readme"
+}
