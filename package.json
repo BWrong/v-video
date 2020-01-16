@@ -1,12 +1,12 @@
 {
-  "name": "v-video",
-  "version": "0.0.1",
+  "name": "@bwrong/v-video",
+  "version": "0.0.2",
   "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
   "main": "dist/index.js",
   "scripts": {
     "dev": "",
-    "build": "",
-    "pub": "nrm use npm &&npm publish &&nrm use taobao"
+    "build": "webpack --mode=production",
+    "pub": "nrm use npm &&npm publish --access=public &&nrm use taobao"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,16 @@
     "url": "https://github.com/BWrong/v-video/issues",
     "email": "ibwrong@foxmail.com"
   },
-  "homepage": "https://github.com/BWrong/v-video#readme"
+  "homepage": "https://github.com/BWrong/v-video#readme",
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {
+    "@types/video.js": "^7.3.3",
+    "video.js": "^7.6.6"
+  }
 }

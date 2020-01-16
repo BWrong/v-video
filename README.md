@@ -4,7 +4,13 @@
 ### 使用方法
 1. 组件注册
 
-该组件属于cui中的一个组件，引入cui即会全局注册该组件，无需再单独注册
+```js
+import videojs from 'video.js'; // 需要依赖video.js
+import myVideo from 'v-video';
+Vue.use(myVideo,{
+    // options...
+})
+```
 
 
 2. 使用组件
@@ -58,7 +64,7 @@ computed: {
 ```
 3. 使用videojs实例上的属性和方法，一般在mounted生命周期使用
 
-此处实例即原生的videojs实例，所有官方的方法均可使用，具体用法见官方文档。
+所有官方的方法均可使用，具体用法见[官方文档](https://videojs.com)。
 
 ```js
 // 播放
