@@ -1,4 +1,7 @@
-declare namespace vvideojs{
-  function install(Vue: any, options: {}):void
+declare module 'v-videojs' {
+  export interface InstallationOptions {
+    [key:string]:any
+  }
+  export function install(Vue: any, options?: InstallationOptions): void;
 }
-export = vvideojs;
+export default vVideojs

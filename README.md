@@ -1,24 +1,24 @@
-# v-video
+# v-videojs
 基于videojs封装的Vue指令，简化videojs创建流程
 
 ### 使用方法
-1. 组件注册
-
-```js
-import videojs from 'video.js'; // 需要依赖video.js
-import myVideo from 'v-video';
-Vue.use(myVideo,{
-    // options...
-})
-```
-
-
-2. 使用组件
 
 为了兼容原生video标签，在原生video标签上加上`v-video`指令即可，然后通过props传入参数
-
+```js
+import videojs from 'video.js'; // 需要依赖video.js
+import 'video.js/dist/video-js.css'
+import video from 'v-videojs';
+import lang from 'video.js/dist/lang'
+videojs.addLanguage('zh-CN', lang);
+Vue.use(video, {
+    onlyOnePlay: true, // 是否同时只允许一个播放
+    // options... 可接受video.js配置项
+})
+```
 ```html
- <video v-video controls src="./assets/media/demo.mp4" poster="./assets/img/img1.jpg"></video>
+ <video v-video controls poster="./assets/img/img1.jpg">
+    <source  src="/demo.mp4" type="video/mp4">
+</video>
 ```
 
 ### API
@@ -49,7 +49,9 @@ Vue.use(myVideo,{
 
 ```html
 <!-- html -->
-<video v-video controls src="./assets/media/demo.mp4" poster="./assets/img/img1.jpg" ref="video"></video>
+<video v-video controls poster="./assets/img/img1.jpg" ref="video">
+    <source  src="/demo.mp4" type="video/mp4">
+</video>
 ```
 2. 获取对应的videojs实例
 

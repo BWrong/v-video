@@ -1,9 +1,9 @@
 {
   "name": "v-videojs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
   "main": "dist/index.js",
-  "types": "@types/index.d.js",
+  "types": "types/index.d.js",
   "scripts": {
     "dev": "",
     "build": "webpack --mode=production",
