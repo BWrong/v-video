@@ -1,10 +1,10 @@
 # v-videojs
-基于videojs封装的Vue指令，简化videojs创建流程
-
 ![npm](https://img.shields.io/npm/dt/v-videojs)
 ![npm](https://img.shields.io/npm/v/v-videojs)
 ![NPM](https://img.shields.io/npm/l/v-videojs)
 ![GitHub stars](https://img.shields.io/github/stars/bwrong/v-video?style=social)
+
+基于videojs封装的Vue指令，简化videojs创建流程
 ### 使用方法
 
 为了兼容原生video标签，在原生video标签上加上`v-video`指令即可，然后通过props传入参数
