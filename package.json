@@ -1,6 +1,6 @@
 {
   "name": "v-videojs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
   "main": "dist/index.js",
   "types": "types/index.d.js",
