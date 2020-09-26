@@ -7,6 +7,7 @@
 基于`video.js`封装的Vue指令，用于创建一个视频播放器。
 ### 使用方法
 在`video`上添加`v-video`指令，部分参数可以通过props传入，也可以全局配置，props拥有更高优先级。
+
 ```js
 import videojs from 'video.js'; // 需要依赖video.js
 import 'video.js/dist/video-js.css'
@@ -19,7 +20,7 @@ Vue.use(video, {
 })
 ```
 ```html
- <video v-video controls poster="./assets/img/img1.jpg">
+<video v-video controls poster="./assets/img/img1.jpg">
     <source  src="/demo.mp4" type="video/mp4">
 </video>
 ```
@@ -44,6 +45,13 @@ Vue.use(video, {
 |autoplay|no|自动播放|Boolean|false|
 |preload|no|预加载,可选项：'auto'、'metadata'、'none'|String|'auto'|
 |muted|no|静音|Boolean|false|
+#### Events
+支持video元素所有事件
+```html
+<video class="" controls v-video @play="play" @pause="pause">
+    <source  src="/demo.mp4" type="video/mp4">
+</video>
+```
 
 #### Methods
 
@@ -67,7 +75,7 @@ computed: {
     }
 },
 ```
-3. 使用`video.js`实例上的属性和方法，一般在mounted生命周期使用
+3. 使用`video.js`实例上的属性和方法，在mounted生命周期使用
 
 所有官方的方法均可使用，具体用法见[官方文档](https://videojs.com)。
 
@@ -82,5 +90,6 @@ this.videoPlayer.dispose();
 this.videoPlayer.on(eventName,fn);
 // 触发事件
 this.videoPlayer.trigger(eventName);
+// ....
 // 更多用法见官方文档
 ```

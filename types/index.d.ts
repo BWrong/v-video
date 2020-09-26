@@ -4,4 +4,3 @@ declare module 'v-videojs' {
   }
   export function install(Vue: any, options?: InstallationOptions): void;
 }
-export default vVideojs
