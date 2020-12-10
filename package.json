@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Based on the Vue directive by videojs, the creation process of videojs is simplified",
   "main": "dist/index.js",
-  "types": "types/index.d.js",
+  "typings": "types/index.d.js",
   "scripts": {
     "dev": "",
     "build": "webpack --mode=production",
